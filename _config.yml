@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+
+title: [oye.sh]
+description: [没有伞的孩子，必须在雨中努力奔跑。]
+show_downloads: true
+google_analytics:
