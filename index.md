@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## 没有伞的孩子，必须在雨中努力奔跑。
 
 You can use the [editor on GitHub](https://github.com/okxx/okxx.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
