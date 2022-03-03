@@ -2,21 +2,20 @@
 
 # Setup
 title:        oye.sh
-tagline:      A responsive theme for your project on GitHub Pages
-baseurl:      ""
+tagline:      没有伞的孩子，必须在雨中努力奔跑。
+baseurl:      "http://oye.sh"
 paginate:     1
 locale:       "cn"
-description:  "没有伞的孩子，必须在雨中努力奔跑。"
 google_analytics:
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  name:       OYE
+  url:        http://oye.sh
 
 # Gems
-gems:
-  - jekyll-paginate
+#gems:
+#  - jekyll-paginate
 
 #Others
 markdown: kramdown
