@@ -4,9 +4,10 @@
 title:        oye.sh
 tagline:      没有伞的孩子，必须在雨中努力奔跑。
 baseurl:      "http://oye.sh"
-paginate:     1
+paginate:     10
 locale:       "cn"
 google_analytics:
+show_downloads: true
 
 # About/contact
 author:
