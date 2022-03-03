@@ -1,5 +1,22 @@
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 
-title: [oye.sh]
-description: [没有伞的孩子，必须在雨中努力奔跑。]
+# Setup
+title:        oye.sh
+tagline:      A responsive theme for your project on GitHub Pages
+baseurl:      ""
+paginate:     1
+locale:       "cn"
+description:  "没有伞的孩子，必须在雨中努力奔跑。"
 google_analytics:
+
+# About/contact
+author:
+  name:       Author name
+  url:        http://yourhomepage.com 
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
