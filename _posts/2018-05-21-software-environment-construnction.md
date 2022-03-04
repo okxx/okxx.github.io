@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Software environment construction
-subtitle: Software environment construction
+title: 软件环境自动构建脚本
 categories: linux
 tags: linux
 sidebar: []
@@ -17,14 +16,14 @@ Software environment construction
 #
 #
 # 用户:用户组
-#       appuser:bxt
+#       user:user_group
 # 服务:服务ID
-#       video:1004
+#       service:1000
 # 目录:目录权限
-#       appuser /home/boilerplate/ 755
+#       user /home/boilerplate/ 755
 # 数据库:
-#       1.用户名：密码
-#       2.数据库权限
+#       1.username：password
+#       2.database
 #
 #############################
 # 读取配置文件函数
@@ -51,14 +50,14 @@ userBuild(){
     if [ $? -ne 0 ]
     then
         groupadd $os_group
-        echo "--- 构建用户组: ${os_group}"
+        echo "--- groupadd: ${os_group}"
     fi
 
     if id -u $os_user > /dev/null 2>&1; then
-        echo "用户：${os_user}  已存在, 不做更新！"
+        echo "user：${os_user}  exists."
     else  
         useradd -g $os_group -m $os_user
-        echo "--- 构建用户与分配用户组: ${os_user} | ${os_group}"
+        echo "--- useradd -g: ${os_user} | ${os_group}"
     fi
 }
 
@@ -70,15 +69,15 @@ softBuild(){
 
     # 提取软件目录地址
     soft_path=$(ini $conf_file $conf_section "path")
-    echo "软件路径：${soft_path}"
+    echo "soft_path：${soft_path}"
 
     # 提取软件名称
     soft_name=$(ini $conf_file $conf_section "name")
-    echo "软件名称：${soft_name}"
+    echo "soft_name: ${soft_name}"
 
     # 构建软件目录
     buildPath=$soft_path/$soft_name
-    echo "构建目录信息： ${buildPath}"
+    echo "buildPath: ${buildPath}"
     if [ ! -d $buildPath ]; then
         mkdir -p $buildPath
     fi 
@@ -95,13 +94,10 @@ softBuild(){
 databaseBuild(){
     conf_section="db"
 
-    # 提取数据库名称
     db_name=$(ini $conf_file $conf_section "name")
 
-    # 提取数据库账号
     db_account=$(ini $conf_file $conf_section "account")
 
-    # 提取数据库密码
     db_password=$(ini $conf_file $conf_section "password")
 
     ruser="root"
