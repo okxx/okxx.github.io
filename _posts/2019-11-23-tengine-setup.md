@@ -9,13 +9,15 @@ sidebar: []
 执行脚本之前创建以下配置信息
 
 结构如下：
-    --- tengine
-        --- config
-            nginx.conf
-            server.forward
-            tengine
-            tengine.service
-        --- tengine-auto.sh
+```
+./config/
+	nginx.conf
+	server.forward
+	tengine
+	tengine.service
+./tengine-auto.sh
+```
+
 
 ### tengine/config/nginx.conf
 ```sh
