@@ -1,3 +1,13 @@
+---
+layout: post
+title: PHP RSA Algorithm
+categories: php
+tags: php
+sidebar: []
+---
+
+PHP RSA Algorithm.
+
 ```php
 $public_key_path = '/data/site_config/open_pem/rsa_private_key.pem';
 $private_key_path = '/data/site_config/open_pem/rsa_private_key.pem';
