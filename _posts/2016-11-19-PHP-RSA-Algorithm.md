@@ -1,8 +1,8 @@
 ---
 layout: post
 title: PHP RSA Algorithm
-categories: php
-tags: php
+categories: [php]
+tags: [php]
 sidebar: []
 ---
 
