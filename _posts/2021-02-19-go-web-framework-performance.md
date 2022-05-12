@@ -105,7 +105,7 @@ Transfer/sec:     16.19MB
 
 测试代码
 - Gin
-```go
+```bash
 package main
 
 import (
@@ -124,7 +124,7 @@ func main() {
 ```
 
 - Echo
-```go
+```bash
 package main
 
 import (
@@ -144,7 +144,7 @@ func main() {
 ```
 
 - Fiber
-```go
+```bash
 package main
 
 import "github.com/gofiber/fiber/v2"
@@ -159,7 +159,7 @@ func main() {
 ```
 
 - Beego
-```go
+```bash
 package main
 
 import (
@@ -179,7 +179,7 @@ func main() {
 ```
 
 - GoFrame
-```go
+```bash
 package main
 
 import (
